@@ -18,6 +18,7 @@ int main() {
     {
         while (const std::optional event = window.pollEvent()) 
         {
+            ImGui::SFML::ProcessEvent(window, *event);
             if (event->is<sf::Event::Closed>())
                 window.close();
         }
