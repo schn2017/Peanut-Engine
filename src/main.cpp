@@ -26,7 +26,7 @@ int main() {
         ImGui::SFML::Update(window, deltaClock.restart());
 
         ImGui::ShowDemoWindow();
-
+        
         window.clear();
         ImGui::SFML::Render(window);
         window.display();
