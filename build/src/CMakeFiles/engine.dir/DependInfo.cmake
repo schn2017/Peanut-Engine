@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/murdoch/Peanut Engine/Peanut-Engine/src/main.cpp" "src/CMakeFiles/engine.dir/main.cpp.o" "gcc" "src/CMakeFiles/engine.dir/main.cpp.o.d"
+  "/Users/murdoch/Peanut Engine/Peanut-Engine/src/src/Editor.cpp" "src/CMakeFiles/engine.dir/src/Editor.cpp.o" "gcc" "src/CMakeFiles/engine.dir/src/Editor.cpp.o.d"
+  "/Users/murdoch/Peanut Engine/Peanut-Engine/src/src/main.cpp" "src/CMakeFiles/engine.dir/src/main.cpp.o" "gcc" "src/CMakeFiles/engine.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

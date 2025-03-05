@@ -195,29 +195,53 @@ engine/fast:
 	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/engine.dir/build.make src/CMakeFiles/engine.dir/build
 .PHONY : engine/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/Editor.o: src/Editor.cpp.o
+.PHONY : src/Editor.o
 
 # target to build an object file
-main.cpp.o:
-	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/engine.dir/build.make src/CMakeFiles/engine.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/Editor.cpp.o:
+	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/engine.dir/build.make src/CMakeFiles/engine.dir/src/Editor.cpp.o
+.PHONY : src/Editor.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/Editor.i: src/Editor.cpp.i
+.PHONY : src/Editor.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/engine.dir/build.make src/CMakeFiles/engine.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/Editor.cpp.i:
+	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/engine.dir/build.make src/CMakeFiles/engine.dir/src/Editor.cpp.i
+.PHONY : src/Editor.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/Editor.s: src/Editor.cpp.s
+.PHONY : src/Editor.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/engine.dir/build.make src/CMakeFiles/engine.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/Editor.cpp.s:
+	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/engine.dir/build.make src/CMakeFiles/engine.dir/src/Editor.cpp.s
+.PHONY : src/Editor.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/engine.dir/build.make src/CMakeFiles/engine.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/engine.dir/build.make src/CMakeFiles/engine.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/engine.dir/build.make src/CMakeFiles/engine.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -234,9 +258,12 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... engine"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/Editor.o"
+	@echo "... src/Editor.i"
+	@echo "... src/Editor.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

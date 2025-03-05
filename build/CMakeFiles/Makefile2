@@ -472,7 +472,7 @@ _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/all: _deps/freetype-build/CMake
 
 # Build rule for subdir invocation for target.
 _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" 58
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" 57
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" 0
 .PHONY : _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/rule
@@ -547,12 +547,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all: _deps/sfml-
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all: _deps/freetype-build/CMakeFiles/freetype.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" --progress-num=51,52,53,54,55,56,57,58,59,60,61,62,63 "Built target sfml-graphics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" --progress-num=52,53,54,55,56,57,58,59,60,61,62,63 "Built target sfml-graphics"
 .PHONY : _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" 54
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" 53
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" 0
 .PHONY : _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/rule
@@ -604,12 +604,12 @@ _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/vorbis-buil
 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" --progress-num=41,42,43,44,45,46,47,48,49,50 "Built target sfml-audio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" --progress-num=41,42,43,44,45,46,47,48,49,50,51 "Built target sfml-audio"
 .PHONY : _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" 40
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" 0
 .PHONY : _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/rule
@@ -825,7 +825,7 @@ src/CMakeFiles/engine.dir/all: _deps/spdlog-build/CMakeFiles/spdlog.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/engine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" 63
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" 62
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/engine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" 0
 .PHONY : src/CMakeFiles/engine.dir/rule

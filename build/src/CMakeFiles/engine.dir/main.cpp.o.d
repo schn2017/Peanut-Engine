@@ -1,5 +1,6 @@
 src/CMakeFiles/engine.dir/main.cpp.o: \
   /Users/murdoch/Peanut\ Engine/Peanut-Engine/src/main.cpp \
+  /Users/murdoch/Peanut\ Engine/Peanut-Engine/src/include/Editor.h \
   /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/sfml-src/include/SFML/Graphics/RenderWindow.hpp \
   /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/sfml-src/include/SFML/Graphics/Export.hpp \
   /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/sfml-src/include/SFML/Config.hpp \
@@ -912,63 +913,4 @@ src/CMakeFiles/engine.dir/main.cpp.o: \
   /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/sfml-src/include/SFML/System/Vector3.hpp \
   /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/sfml-src/include/SFML/System/Vector3.inl \
   /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/sfml-src/include/SFML/Window/Event.inl \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/sfml-src/include/SFML/System/Clock.hpp \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/imgui-sfml-src/imgui-SFML.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/imgui-sfml-src/imgui-SFML_export.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/imgui-src/imgui.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/imgui-sfml-src/imconfig-SFML.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/imgui-src/imconfig.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/float.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/float.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/spdlog.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/common.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/details/null_mutex.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/tweakme.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/functional \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/binary_negate.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/bind.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/bind_back.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/perfect_forward.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/bind_front.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/binder1st.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/binder2nd.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/unordered_map \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/is_transparent.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__hash_table \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__node_handle \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/compose.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/default_searcher.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/function.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/builtin_new_allocator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/strip_signature.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/mem_fn.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/mem_fun_ref.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/not_fn.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/fmt/fmt.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/fmt/bundled/core.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/fmt/bundled/format.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/fmt/bundled/base.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/details/registry.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/details/periodic_worker.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/condition_variable \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/thread \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__thread/formatter.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__thread/this_thread.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__thread/thread.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/sstream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/bitset \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/details/synchronous_factory.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/logger.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/details/backtracer.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/details/circular_q.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/details/log_msg_buffer.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/details/log_msg.h \
-  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/spdlog-src/include/spdlog/version.h
+  /Users/murdoch/Peanut\ Engine/Peanut-Engine/build/_deps/sfml-src/include/SFML/System/Clock.hpp

@@ -69,28 +69,44 @@ include src/CMakeFiles/engine.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/engine.dir/flags.make
 
-src/CMakeFiles/engine.dir/main.cpp.o: src/CMakeFiles/engine.dir/flags.make
-src/CMakeFiles/engine.dir/main.cpp.o: /Users/murdoch/Peanut\ Engine/Peanut-Engine/src/main.cpp
-src/CMakeFiles/engine.dir/main.cpp.o: src/CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/engine.dir/main.cpp.o"
-	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/engine.dir/main.cpp.o -MF CMakeFiles/engine.dir/main.cpp.o.d -o CMakeFiles/engine.dir/main.cpp.o -c "/Users/murdoch/Peanut Engine/Peanut-Engine/src/main.cpp"
+src/CMakeFiles/engine.dir/src/main.cpp.o: src/CMakeFiles/engine.dir/flags.make
+src/CMakeFiles/engine.dir/src/main.cpp.o: /Users/murdoch/Peanut\ Engine/Peanut-Engine/src/src/main.cpp
+src/CMakeFiles/engine.dir/src/main.cpp.o: src/CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/engine.dir/src/main.cpp.o"
+	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/engine.dir/src/main.cpp.o -MF CMakeFiles/engine.dir/src/main.cpp.o.d -o CMakeFiles/engine.dir/src/main.cpp.o -c "/Users/murdoch/Peanut Engine/Peanut-Engine/src/src/main.cpp"
 
-src/CMakeFiles/engine.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/main.cpp.i"
-	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/murdoch/Peanut Engine/Peanut-Engine/src/main.cpp" > CMakeFiles/engine.dir/main.cpp.i
+src/CMakeFiles/engine.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/main.cpp.i"
+	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/murdoch/Peanut Engine/Peanut-Engine/src/src/main.cpp" > CMakeFiles/engine.dir/src/main.cpp.i
 
-src/CMakeFiles/engine.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/main.cpp.s"
-	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/murdoch/Peanut Engine/Peanut-Engine/src/main.cpp" -o CMakeFiles/engine.dir/main.cpp.s
+src/CMakeFiles/engine.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/main.cpp.s"
+	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/murdoch/Peanut Engine/Peanut-Engine/src/src/main.cpp" -o CMakeFiles/engine.dir/src/main.cpp.s
+
+src/CMakeFiles/engine.dir/src/Editor.cpp.o: src/CMakeFiles/engine.dir/flags.make
+src/CMakeFiles/engine.dir/src/Editor.cpp.o: /Users/murdoch/Peanut\ Engine/Peanut-Engine/src/src/Editor.cpp
+src/CMakeFiles/engine.dir/src/Editor.cpp.o: src/CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/engine.dir/src/Editor.cpp.o"
+	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/engine.dir/src/Editor.cpp.o -MF CMakeFiles/engine.dir/src/Editor.cpp.o.d -o CMakeFiles/engine.dir/src/Editor.cpp.o -c "/Users/murdoch/Peanut Engine/Peanut-Engine/src/src/Editor.cpp"
+
+src/CMakeFiles/engine.dir/src/Editor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/Editor.cpp.i"
+	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/murdoch/Peanut Engine/Peanut-Engine/src/src/Editor.cpp" > CMakeFiles/engine.dir/src/Editor.cpp.i
+
+src/CMakeFiles/engine.dir/src/Editor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/Editor.cpp.s"
+	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/murdoch/Peanut Engine/Peanut-Engine/src/src/Editor.cpp" -o CMakeFiles/engine.dir/src/Editor.cpp.s
 
 # Object files for target engine
 engine_OBJECTS = \
-"CMakeFiles/engine.dir/main.cpp.o"
+"CMakeFiles/engine.dir/src/main.cpp.o" \
+"CMakeFiles/engine.dir/src/Editor.cpp.o"
 
 # External object files for target engine
 engine_EXTERNAL_OBJECTS =
 
-src/engine: src/CMakeFiles/engine.dir/main.cpp.o
+src/engine: src/CMakeFiles/engine.dir/src/main.cpp.o
+src/engine: src/CMakeFiles/engine.dir/src/Editor.cpp.o
 src/engine: src/CMakeFiles/engine.dir/build.make
 src/engine: _deps/imgui-sfml-build/libImGui-SFML.a
 src/engine: _deps/spdlog-build/libspdlog.a
@@ -101,7 +117,7 @@ src/engine: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Libra
 src/engine: _deps/sfml-build/lib/libfreetype.a
 src/engine: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd
 src/engine: src/CMakeFiles/engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/murdoch/Peanut Engine/Peanut-Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable engine"
 	cd "/Users/murdoch/Peanut Engine/Peanut-Engine/build/src" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
