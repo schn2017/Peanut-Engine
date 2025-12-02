@@ -8,4 +8,6 @@ public:
 private:
   Node* parentNode = nullptr;
   std::vector<Node*> m_childNodes;
+
+  bool visible;
 };

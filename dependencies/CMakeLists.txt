@@ -1,5 +1,13 @@
 include(FetchContent)
 
+# Catch2
+FetchContent_Declare(
+  catch2
+  GIT_REPOSITORY https://github.com/catchorg/Catch2
+  GIT_TAG e849735e11f23ce9ec819e053b107f2ec3c3c1c4
+)
+add_subdirectory(catch2)
+
 # Dear ImGui
 FetchContent_Declare(
   imgui
@@ -18,13 +26,15 @@ FetchContent_Declare(
 add_subdirectory(imgui-sfml)
 
 # json
-FetchContent_Declare(json
+FetchContent_Declare(
+  json
   GIT_REPOSITORY https://github.com/nlohmann/json
   GIT_TAG master)
 add_subdirectory(json)
 
 # SFML
-FetchContent_Declare(SFML
+FetchContent_Declare(
+    SFML
     GIT_REPOSITORY https://github.com/SFML/SFML.git
     GIT_TAG 3.0.0
     GIT_SHALLOW ON
@@ -33,7 +43,8 @@ FetchContent_Declare(SFML
 add_subdirectory(sfml)
 
 # spdlog
-FetchContent_Declare(spdlog
+FetchContent_Declare(
+  spdlog
   GIT_REPOSITORY https://github.com/gabime/spdlog
   GIT_TAG v1.x)
 add_subdirectory(spdlog)

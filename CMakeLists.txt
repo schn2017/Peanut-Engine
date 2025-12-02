@@ -4,3 +4,4 @@ project(engine LANGUAGES CXX)
 
 add_subdirectory(dependencies)
 add_subdirectory(src)
+add_subdirectory(tests)
