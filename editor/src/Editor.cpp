@@ -1,7 +1,5 @@
 #include "Editor.h"
 
-#include "EntityTree.h"
-
 #include <imgui-SFML.h>
 #include <imgui.h>
 #include "spdlog/spdlog.h"
@@ -30,9 +28,7 @@ void Editor::process()
         }
 
         ImGui::SFML::Update(m_window, m_deltaClock.restart());
-
-        EntityTree();
-        
+        m_entityTree.draw();
         m_window.clear();
         ImGui::SFML::Render(m_window);
         m_window.display();
