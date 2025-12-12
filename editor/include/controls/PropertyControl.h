@@ -21,7 +21,6 @@ class Property {
 
         virtual ~Property() = default;
 
-
         std::string name() { return m_name; };
         PropertyType type() { return m_type; };
 

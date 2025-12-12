@@ -2,12 +2,18 @@
 #include <vector>
 #include "controls/PropertyControl.h"
 
+enum NodeType {
+    Entity,
+    Component
+};
+
 class Node {
 public:
-    Node(std::string name, int id);
+    Node(std::string name, int id, NodeType type);
 
     std::string m_name;
     int m_uid = 0;
+    NodeType m_type;
 
     std::vector<Node*> m_children;
     std::vector<Property*> m_properties;

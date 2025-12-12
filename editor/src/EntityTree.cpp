@@ -4,9 +4,15 @@
 #include "misc/cpp/imgui_stdlib.h"
 #include <string>
 #include <iostream>
+#include <nlohmann/json.hpp>
+#include <Entity.h>
+using json = nlohmann::json;
 
-Node::Node(std::string name, int id)
-: m_name(name), m_uid(id) {
+
+Node::Node(std::string name, int id, NodeType type)
+: m_name(name),
+    m_uid(id),
+    m_type(type) {
 
 }
 
@@ -58,17 +64,36 @@ void EntityTree::drawNode(Node* node) {
         tree_flags |= ImGuiTreeNodeFlags_Leaf | ImGuiTreeNodeFlags_Bullet;
 
     bool openNode = ImGui::TreeNodeEx(node->m_name.c_str(), tree_flags);
-    if (ImGui::BeginPopupContextItem()) { // attaches to the last item, which is the TreeNode label
-        if (ImGui::MenuItem("Delete Node")) { /* ... */ }
-        if (ImGui::MenuItem("Rename Node")) { /* ... */ }
+    if (ImGui::BeginPopupContextItem())
+    {
+        if (node->m_type == NodeType::Entity)
+        {
+            if (ImGui::MenuItem("Create Component"))
+            { 
+                /* ... */ 
+            }
+
+            if (ImGui::MenuItem("Delete Node"))
+            { 
+                /* ... */ 
+            }
+        } else if (node->m_type == NodeType::Component)
+        {
+            if (ImGui::MenuItem("Delete Component"))
+            { 
+                /* ... */
+            }
+        }
         ImGui::EndPopup();
     }
 
     if (ImGui::IsItemFocused())
         m_selectedNode = node;
 
-    if (openNode) {
-        for (auto& child : node->m_children) {
+    if (openNode)
+    {
+        for (auto& child : node->m_children)
+        {
             drawNode(child);
         }
 
@@ -82,26 +107,31 @@ EntityTree::EntityTree()
 {
     TextProperty* nameProp = new TextProperty("Name");
 
-    Node* comp1 = new Node("Health", 0);
+    Node* comp1 = new Node("Health", 0, NodeType::Component);
 
-    Node* comp2 = new Node("Sprite", 1);
+    Node* comp2 = new Node("Sprite", 1, NodeType::Component);
 
-    Node* comp3 = new Node("Bleh", 2);
+    Node* comp3 = new Node("Bleh", 2, NodeType::Component);
 
-    Node* node1 = new Node("Entity 1", 3);
+    Node* node1 = new Node("Entity 1", 3, NodeType::Entity);
 
     node1->m_properties.push_back(nameProp);
 
     node1->m_children.push_back(comp1);
     node1->m_children.push_back(comp2);
 
-    Node* node2 = new Node("Entity 2", 4);
+    Node* node2 = new Node("Entity 2", 4, NodeType::Entity);
 
     node2->m_children.push_back(comp3);
 
     m_nodes.push_back(node1);
     m_nodes.push_back(node2);
+
+    json j = {{"m_uid", 123}};
+    auto test = j.get<EntityBleh>();
+    std::cout << "The entity id: " << test.uid() << std::endl;
 }
+
 
 void EntityTree::draw()
 {
@@ -114,7 +144,8 @@ void EntityTree::draw()
 
         if (ImGui::BeginTable("##bg", 1, ImGuiTableFlags_RowBg))
         {
-            for (auto& node : m_nodes) {
+            for (auto& node : m_nodes)
+            {
                 drawNode(node);
             }
 
@@ -130,7 +161,8 @@ void EntityTree::draw()
         // The actual popup
         if (ImGui::BeginPopup("table_context_menu"))
         {
-            if (ImGui::MenuItem("Delete Entity")) { 
+            if (ImGui::MenuItem("Create Entity"))
+            { 
                 // Delete Entity
             }
             ImGui::EndPopup();

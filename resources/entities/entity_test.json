@@ -1,0 +1,37 @@
+{
+    "m_uid": 0,
+    "m_type": "entity",
+    "m_children": [
+        {
+            "m_uid": 1,
+            "m_type": "component",
+            "children": [],
+            "properies": [
+                {
+                    "name": "Name",
+                    "type": "text" ,
+                    "value": "Health" 
+                }
+            ]
+        },
+        {
+            "uid": 2,
+            "type": "component",
+            "children": [],
+            "properies": [
+                {
+                    "name": "Name",
+                    "type": "text" ,
+                    "value": "Sprite" 
+                }
+            ]
+        }
+    ],
+    "properties": [
+        {
+            "name": "Name",
+            "type": "text",
+            "value": "Entity 1"
+        }
+    ]
+}

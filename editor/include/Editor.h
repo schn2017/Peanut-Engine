@@ -11,7 +11,7 @@ public:
     Editor();
 
     void process();
-
+ 
 private:
     sf::RenderWindow m_window;
     sf::Clock m_deltaClock;
