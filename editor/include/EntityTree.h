@@ -3,8 +3,8 @@
 #include "controls/PropertyControl.h"
 
 enum NodeType {
-    Entity,
-    Component
+    EntityNode,
+    ComponentNode
 };
 
 class Node {

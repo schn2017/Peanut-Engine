@@ -26,14 +26,14 @@ class PropertyBleh {
 };
 */
 
-class EntityBleh {
+class Entity {
     public:
-        EntityBleh() {};
+        Entity() {};
 
         int uid() const { return m_uid; };
 
-        NLOHMANN_DEFINE_TYPE_INTRUSIVE(EntityBleh, m_uid, m_components);
+        NLOHMANN_DEFINE_TYPE_INTRUSIVE(Entity, m_uid, m_components);
     private:
         int m_uid = 0;
-        std::vector<ComponentBleh> m_components;
+        std::vector<Component> m_components;
 };

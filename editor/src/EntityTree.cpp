@@ -66,7 +66,7 @@ void EntityTree::drawNode(Node* node) {
     bool openNode = ImGui::TreeNodeEx(node->m_name.c_str(), tree_flags);
     if (ImGui::BeginPopupContextItem())
     {
-        if (node->m_type == NodeType::Entity)
+        if (node->m_type == NodeType::EntityNode)
         {
             if (ImGui::MenuItem("Create Component"))
             { 
@@ -77,7 +77,7 @@ void EntityTree::drawNode(Node* node) {
             { 
                 /* ... */ 
             }
-        } else if (node->m_type == NodeType::Component)
+        } else if (node->m_type == NodeType::ComponentNode)
         {
             if (ImGui::MenuItem("Delete Component"))
             { 
@@ -107,20 +107,20 @@ EntityTree::EntityTree()
 {
     TextProperty* nameProp = new TextProperty("Name");
 
-    Node* comp1 = new Node("Health", 0, NodeType::Component);
+    Node* comp1 = new Node("Health", 0, NodeType::ComponentNode);
 
-    Node* comp2 = new Node("Sprite", 1, NodeType::Component);
+    Node* comp2 = new Node("Sprite", 1, NodeType::ComponentNode);
 
-    Node* comp3 = new Node("Bleh", 2, NodeType::Component);
+    Node* comp3 = new Node("Bleh", 2, NodeType::ComponentNode);
 
-    Node* node1 = new Node("Entity 1", 3, NodeType::Entity);
+    Node* node1 = new Node("Entity 1", 3, NodeType::EntityNode);
 
     node1->m_properties.push_back(nameProp);
 
     node1->m_children.push_back(comp1);
     node1->m_children.push_back(comp2);
 
-    Node* node2 = new Node("Entity 2", 4, NodeType::Entity);
+    Node* node2 = new Node("Entity 2", 4, NodeType::EntityNode);
 
     node2->m_children.push_back(comp3);
 
@@ -128,7 +128,7 @@ EntityTree::EntityTree()
     m_nodes.push_back(node2);
 
     json j = {{"m_uid", 123}};
-    auto test = j.get<EntityBleh>();
+    auto test = j.get<Entity>();
     std::cout << "The entity id: " << test.uid() << std::endl;
 }
 

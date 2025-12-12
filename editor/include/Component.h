@@ -1,9 +1,9 @@
 #pragma once
 
-class ComponentBleh {
+class Component {
     public: 
-        ComponentBleh() {};
-        NLOHMANN_DEFINE_TYPE_INTRUSIVE(ComponentBleh, m_uid);
+        Component() {};
+        NLOHMANN_DEFINE_TYPE_INTRUSIVE(Component, m_uid);
     private:
         int m_uid = 0;
 };
