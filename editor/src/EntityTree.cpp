@@ -1,5 +1,5 @@
 #include "EntityTree.h"
-#include "controls/PropertyControl.h"
+#include "Property.h"
 #include <imgui.h>
 #include "misc/cpp/imgui_stdlib.h"
 #include <string>
@@ -7,14 +7,6 @@
 #include <nlohmann/json.hpp>
 #include <Entity.h>
 using json = nlohmann::json;
-
-
-Node::Node(std::string name, int id, NodeType type)
-: m_name(name),
-    m_uid(id),
-    m_type(type) {
-
-}
 
 void EntityTree::drawProperty(Property* property)
 {
@@ -45,6 +37,7 @@ void EntityTree::drawProperty(Property* property)
     ImGui::PopID();
 }
 
+/*
 void EntityTree::drawNode(Node* node) {
 
     ImGui::TableNextRow();
@@ -70,18 +63,15 @@ void EntityTree::drawNode(Node* node) {
         {
             if (ImGui::MenuItem("Create Component"))
             { 
-                /* ... */ 
             }
 
             if (ImGui::MenuItem("Delete Node"))
             { 
-                /* ... */ 
             }
         } else if (node->m_type == NodeType::ComponentNode)
         {
             if (ImGui::MenuItem("Delete Component"))
             { 
-                /* ... */
             }
         }
         ImGui::EndPopup();
@@ -102,36 +92,28 @@ void EntityTree::drawNode(Node* node) {
 
     ImGui::PopID();
 };
+*/
 
 EntityTree::EntityTree()
 {
-    TextProperty* nameProp = new TextProperty("Name");
-
-    Node* comp1 = new Node("Health", 0, NodeType::ComponentNode);
-
-    Node* comp2 = new Node("Sprite", 1, NodeType::ComponentNode);
-
-    Node* comp3 = new Node("Bleh", 2, NodeType::ComponentNode);
-
-    Node* node1 = new Node("Entity 1", 3, NodeType::EntityNode);
-
-    node1->m_properties.push_back(nameProp);
-
-    node1->m_children.push_back(comp1);
-    node1->m_children.push_back(comp2);
-
-    Node* node2 = new Node("Entity 2", 4, NodeType::EntityNode);
-
-    node2->m_children.push_back(comp3);
-
-    m_nodes.push_back(node1);
-    m_nodes.push_back(node2);
-
-    json j = {{"m_uid", 123}};
+    json j = {
+        {"m_uid", 123},
+        {"m_components", json::array()},
+        {"m_properties", json::array()}
+    };
     auto test = j.get<Entity>();
     std::cout << "The entity id: " << test.uid() << std::endl;
-}
 
+    json q = {
+        {"m_uid", 1},
+        {"m_type", PropertyType::Text},
+        {"m_name", "Bleh"},
+        {"m_defaultValue", "default"}, 
+        {"m_value", "actual"}
+    };
+    auto prop = q.get<TextProperty>();
+    std::cout << "The prop id: " << prop.uid() << ". The value is " << prop.value() << std::endl;
+}
 
 void EntityTree::draw()
 {
@@ -146,7 +128,7 @@ void EntityTree::draw()
         {
             for (auto& node : m_nodes)
             {
-                drawNode(node);
+                //drawNode(node);
             }
 
             ImGui::EndTable();
@@ -176,6 +158,8 @@ void EntityTree::draw()
 
     ImGui::BeginGroup(); // Lock X position
     if (m_selectedNode) {
+        /*
+
         ImGui::Text("%s", m_selectedNode->m_name.c_str());
         ImGui::TextDisabled("UID: 0x%08X", m_selectedNode->m_uid);
         ImGui::Separator();
@@ -194,6 +178,7 @@ void EntityTree::draw()
             ImGui::PopID();
             ImGui::EndTable();           
         }
+        */
     }
     ImGui::EndGroup();
 }

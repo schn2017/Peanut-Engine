@@ -5,8 +5,8 @@
         {
             "m_uid": 1,
             "m_type": "component",
-            "children": [],
-            "properies": [
+            "m_children": [],
+            "m_properties": [
                 {
                     "name": "Name",
                     "type": "text" ,
@@ -17,8 +17,8 @@
         {
             "uid": 2,
             "type": "component",
-            "children": [],
-            "properies": [
+            "m_children": [],
+            "m_properties": [
                 {
                     "name": "Name",
                     "type": "text" ,
@@ -27,7 +27,7 @@
             ]
         }
     ],
-    "properties": [
+    "m_properties": [
         {
             "name": "Name",
             "type": "text",

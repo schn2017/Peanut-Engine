@@ -1,22 +1,55 @@
 #pragma once
 #include <vector>
-#include "controls/PropertyControl.h"
+#include "Property.h"
 
 enum NodeType {
-    EntityNode,
-    ComponentNode
+    ENTITY,
+    COMPONENT
 };
 
 class Node {
-public:
-    Node(std::string name, int id, NodeType type);
+    public:
+        Node(){};
+        Node(NodeType node) : m_node(node) {
 
-    std::string m_name;
-    int m_uid = 0;
-    NodeType m_type;
+        }
 
-    std::vector<Node*> m_children;
-    std::vector<Property*> m_properties;
+        // Required interface
+        virtual const std::string& name() const = 0;
+        virtual int uid() const = 0;
+
+    private:
+        NodeType m_node;
+};
+
+class ComponentNode : public Node {
+    public:
+        ComponentNode() : Node(NodeType::COMPONENT) {
+
+        }
+        const std::string& name() const override {
+            return "";
+        }
+
+        int uid() const override {
+            return 0;
+        }
+
+};
+
+class EntityNode : public Node {
+    public:
+        EntityNode() : Node(NodeType::ENTITY) {
+
+        }
+        const std::string& name() const override {
+            return "";
+        }
+
+        int uid() const override {
+            return 0;
+        }
+
 };
 
 class EntityTree
