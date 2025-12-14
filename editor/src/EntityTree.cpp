@@ -5,7 +5,7 @@
 #include <string>
 #include <iostream>
 #include <nlohmann/json.hpp>
-#include <Entity.h>
+#include <EntityDef.h>
 using json = nlohmann::json;
 
 void EntityTree::drawProperty(Property* property)
@@ -101,7 +101,7 @@ EntityTree::EntityTree()
         {"m_components", json::array()},
         {"m_properties", json::array()}
     };
-    auto test = j.get<Entity>();
+    auto test = j.get<EntityDef>();
     std::cout << "The entity id: " << test.uid() << std::endl;
 
     json q = {

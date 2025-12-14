@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include "Property.h"
+#include "EntityDef.h"
 
 enum NodeType {
     ENTITY,
@@ -35,6 +36,8 @@ class ComponentNode : public Node {
             return 0;
         }
 
+    private:
+        ComponentDef m_component;
 };
 
 class EntityNode : public Node {
@@ -49,7 +52,8 @@ class EntityNode : public Node {
         int uid() const override {
             return 0;
         }
-
+    private:
+        EntityDef m_entity;
 };
 
 class EntityTree

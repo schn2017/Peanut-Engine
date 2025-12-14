@@ -1,4 +1,5 @@
 #include "Editor.h"
+#include <SFML/Graphics.hpp>
 
 #include <imgui-SFML.h>
 #include <imgui.h>
@@ -6,6 +7,17 @@
 #include <nlohmann/json.hpp>
 
 using json = nlohmann::json;
+
+#include <unistd.h>
+#include <limits.h>
+inline std::string getWorkingDirectory()
+{
+    char cwd[PATH_MAX];
+    if (getcwd(cwd, sizeof(cwd)) != nullptr)
+        return std::string(cwd) + std::string("/") + std::string("resources/");
+
+    return "";
+}
 
 Editor::Editor()
     :m_window(sf::VideoMode({1280, 720}), "Editor")
@@ -28,9 +40,22 @@ void Editor::process()
         }
 
         ImGui::SFML::Update(m_window, m_deltaClock.restart());
-
-        ImGui::ShowDemoWindow();
         
+        sf::Texture coin;
+        coin.loadFromFile(getWorkingDirectory() + "sprites/coin.png");
+        /*
+        sf::Sprite coinSprite(coin, sf::IntRect(sf::Vector2i(0, 0), sf::Vector2i(20, 20))); 
+        m_window.draw(coinSprite);
+
+        sf::Texture knight;
+        coin.loadFromFile(getWorkingDirectory() + "sprites/knight.png");
+
+        sf::Sprite knightSprite(coin, sf::IntRect(sf::Vector2i(0, 0), sf::Vector2i(20, 20))); 
+        m_window.draw(knightSprite);
+        */
+
+        ImGui::Image(coin);
+        ImGui::ShowDemoWindow();
         m_window.clear();
         ImGui::SFML::Render(m_window);
         m_window.display();

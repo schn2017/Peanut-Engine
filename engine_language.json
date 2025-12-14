@@ -1,0 +1,21 @@
+{
+    "entity": {
+        "properties": [
+            {
+                "name": "Name",
+                "type": "text",
+                "default": "New Entity"
+            }
+        ]
+    },
+    "component_health": {
+        "properties": [
+
+        ]      
+    },
+    "component_sprite": {
+        "properties": [
+
+        ]
+    }
+}
