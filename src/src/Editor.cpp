@@ -5,6 +5,7 @@
 #include <imgui.h>
 #include "spdlog/spdlog.h"
 #include <nlohmann/json.hpp>
+#include <iostream>
 
 using json = nlohmann::json;
 
@@ -43,8 +44,11 @@ void Editor::process()
         
         sf::Texture coin;
         coin.loadFromFile(getWorkingDirectory() + "sprites/coin.png");
-        /*
+
+        std::cout << coin.getSize().x << ", " << coin.getSize().y << std::endl;
+
         sf::Sprite coinSprite(coin, sf::IntRect(sf::Vector2i(0, 0), sf::Vector2i(20, 20))); 
+        /*
         m_window.draw(coinSprite);
 
         sf::Texture knight;
@@ -54,7 +58,7 @@ void Editor::process()
         m_window.draw(knightSprite);
         */
 
-        ImGui::Image(coin);
+        ImGui::Image(coinSprite);
         ImGui::ShowDemoWindow();
         m_window.clear();
         ImGui::SFML::Render(m_window);
